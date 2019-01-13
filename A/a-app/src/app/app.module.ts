@@ -7,22 +7,22 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ClickComponent } from './click/click.component';
-import { IntroComponent } from './intro/intro.component';
-import { CoverComponent } from './cover/cover.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ObservComponent } from './observ/observ.component';
-import { UseCaseComponent } from './use-case/use-case.component';
 import { MovieSearchComponent } from './movie-search/movie-search.component';
+import { FactoryDemoComponent } from './factory-demo/factory-demo.component';
+import { SubscribeDemoComponent } from './subscribe-demo/subscribe-demo.component';
+import { SubscribeCompletedComponent } from './subscribe-completed/subscribe-completed.component';
+import { ErrorDemoComponent } from './error-demo/error-demo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClickComponent,
-    IntroComponent,
-    CoverComponent,
-    ObservComponent,
-    UseCaseComponent,
-    MovieSearchComponent
+    MovieSearchComponent,
+    FactoryDemoComponent,
+    SubscribeDemoComponent,
+    SubscribeCompletedComponent,
+    ErrorDemoComponent
   ],
   imports: [
     BrowserModule,

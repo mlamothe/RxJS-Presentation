@@ -1,0 +1,12 @@
+<!-- Timer -->
+<button mat-raised-button color="primary" (click)="runTimer()">{{started?'Stop':'Start'}} timer() Demo</button>
+<div class="result">{{timerObs|async}}</div>
+
+<br/><br/>
+<!-- Of -->
+<button mat-raised-button color="primary" (click)="runOf()">Run of() Demo</button>
+<div class="result">{{ofObs|async}}</div>
+<br/>
+<br/><br/>
+
+<a target="_blank" href="https://rxjs-dev.firebaseapp.com/api?query=index&type=function">API</a>

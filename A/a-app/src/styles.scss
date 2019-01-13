@@ -1,11 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-.image {
-    width: 1024px;
-    height: 768px;
-}
-
 p {
     font-size: 36pt;
+    font-family: "Acme";
+}
+
+.result {
+    background-color: rgb(48,48,48);
+    border: 1px solid lightgrey;
+    color: white;
+    display: block;
+    font-weight: bold;
+    height: 34px;
+    line-height: 200%;
+    margin-top: 12px;
+    padding-right: 7px;
+    text-align: end;
+    width: 50px;
 }

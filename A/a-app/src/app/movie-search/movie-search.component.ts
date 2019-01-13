@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { Observable, empty, of } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { map, startWith, switchMap, debounceTime } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 
@@ -66,10 +66,14 @@ export class MovieSearchComponent {
   }
 
   private sortByTitle = (a: Movie, b: Movie): number => {
-    if (a.title < b.title)
+    if (a.title < b.title) {
       return -1;
-    if (a.title > b.title)
+    }
+
+    if (a.title > b.title) {
       return 1;
+    }
+
     return 0;
   };
 

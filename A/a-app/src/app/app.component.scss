@@ -1,3 +1,50 @@
 .spacing {
-    padding: 36px;
+    padding-top: 36px;
+}
+
+.app {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1920px;
+    max-height: 1080px;
+}
+
+.title {
+    position: absolute;
+    top: 668px;
+    font-size: 72pt;
+    color: white;
+    padding-left: 24px;
+}
+
+.byline {
+    background-color: black;
+    width: 1024px;
+    margin-top:-4px;
+    
+    .author {
+        color: white;
+        font-size: 18pt;
+        padding-left: 24px;
+        padding-top: 24px;
+    }
+
+    .author-title {
+        color:lightgrey;        
+        font-size: 12pt;
+        padding-left: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+.question {
+    position: absolute;
+    top: 68px;
+    padding-left: 24px;
+    color: white;
+    font-family: "Acme";
+
+    p {
+        font-size: 46pt;
+    }
 }

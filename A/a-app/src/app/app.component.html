@@ -1,20 +1,76 @@
-<mat-tab-group>
+<mat-tab-group class="app">
 
+  <!-- 8 -->
+  <mat-tab label="Subscribe/Error">
+    <div class="spacing">
+      <app-error-demo></app-error-demo>
+    </div>
+  </mat-tab>
+
+  <!-- 1 -->
   <mat-tab label="Presentation">
     <div class="spacing">
-      <app-cover></app-cover>
+      <div class="image page">
+        <img src="https://source.unsplash.com/0VGG7cqTwCo/1024x768">
+        <div class="title">Understanding RxJS</div>
+        <div class="byline">
+          <div class="author">Marcel Lamothe</div>
+          <div class="author-title">Sr. Software Engineer & Architect at CAMP Systems</div>
+        </div>
+      </div>
     </div>
   </mat-tab>
 
+  <!-- 2 -->
   <mat-tab label="Intro">
     <div class="spacing">
-      <app-intro></app-intro>
+      <img src="https://source.unsplash.com/Kp9z6zcUfGw/1024x768">
+      <div class="question">
+        <p>What if you could treat events like data?</p>
+      </div>
     </div>
   </mat-tab>
 
+  <!-- 3 -->
   <mat-tab label="Use Case">
+    <div class="spacing text">
+      <p>Create an auto-complete control that performs a server-side movie search as the user types.</p>
+      <p>Don't start searching until they've entered at least three characters.</p>
+      <p>Wait a quarter second between each keypress.</p>
+      <p>As the user types, old search requests need to be cancelled.</p>
+      <p>We will do all this with a single line of RxJS.</p>
+    </div>
+  </mat-tab>
+
+  <!-- 4 -->
+  <mat-tab label="Observable">
     <div class="spacing">
-      <app-use-case></app-use-case>
+      <p>At the heart of RxJS is the Observable.</p>
+      <p>It has three main aspects:</p>
+      <p>1. Static Factory Methods</p>
+      <p>2. The subscribe method</p>
+      <p>3. The pipe method.</p>
+    </div>
+  </mat-tab>
+
+  <!-- 5 -->
+  <mat-tab label="Factory Methods">
+    <div class="spacing">
+      <app-factory-demo></app-factory-demo>
+    </div>
+  </mat-tab>
+
+  <!-- 6 -->
+  <mat-tab label="Subscribe">
+    <div class="spacing">
+      <app-subscribe-demo></app-subscribe-demo>
+    </div>
+  </mat-tab>
+
+  <!-- 7 -->
+  <mat-tab label="Subscribe/Completed">
+    <div class="spacing">
+      <app-subscribe-completed></app-subscribe-completed>
     </div>
   </mat-tab>
 
@@ -24,12 +80,7 @@
     </div>
   </mat-tab>
 
-  <!-- mat-tab label="Observable">
-    <div class="spacing">
-      <app-observ></app-observ>
-    </div>
-  </mat-tab>
-
+  <!--
   <mat-tab label="Click Demo">
     <div class="spacing">
       <app-click></app-click>
