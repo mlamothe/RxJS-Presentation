@@ -2,7 +2,7 @@
   <mat-form-field class="example-full-width">
     <input matInput placeholder="Enter Movie Title" aria-label="Movie" [matAutocomplete]="auto" [formControl]="movieCtrl">
     <mat-autocomplete #auto="matAutocomplete">
-      <mat-option *ngFor="let movie of filteredMovies | async" [value]="movie.id">
+      <mat-option *ngFor="let movie of filteredMovies | async" [value]="movie.title">
         <span>{{movie.title}}</span>
       </mat-option>
     </mat-autocomplete>

@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Observable, timer, of, Subscription } from 'rxjs';
+import { Component } from '@angular/core';
+import { Subscription, timer } from 'rxjs';
 
 @Component({
   selector: 'app-subscribe-demo',

@@ -75,7 +75,7 @@ export class MovieSearchComponent {
     }
 
     return 0;
-  };
+  }
 
   private createSearchUrl(value: string): string {
     return `https://api.themoviedb.org/3/search/movie?api_key=9a9fe11bf4564e59de1953c466834203&language=en-US&query=${value}&page=1&include_adult=false`;

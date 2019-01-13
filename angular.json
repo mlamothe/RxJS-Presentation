@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "a-app": {
+    "rxjs-presentation": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/a-app",
+            "outputPath": "dist/rxjs-presentation",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "a-app:build"
+            "browserTarget": "rxjs-presentation:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "a-app:build:production"
+              "browserTarget": "rxjs-presentation:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "a-app:build"
+            "browserTarget": "rxjs-presentation:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         }
       }
     },
-    "a-app-e2e": {
+    "rxjs-presentation-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "a-app:serve"
+            "devServerTarget": "rxjs-presentation:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "a-app:serve:production"
+              "devServerTarget": "rxjs-presentation:serve:production"
             }
           }
         },
@@ -135,5 +135,5 @@
       }
     }
   },
-  "defaultProject": "a-app"
+  "defaultProject": "rxjs-presentation"
 }

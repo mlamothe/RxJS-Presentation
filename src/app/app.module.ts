@@ -6,7 +6,6 @@ import { MatButtonModule, MatCardModule, MatAutocompleteModule, MatTabsModule, M
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { ClickComponent } from './click/click.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MovieSearchComponent } from './movie-search/movie-search.component';
 import { FactoryDemoComponent } from './factory-demo/factory-demo.component';
@@ -17,7 +16,6 @@ import { ErrorDemoComponent } from './error-demo/error-demo.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ClickComponent,
     MovieSearchComponent,
     FactoryDemoComponent,
     SubscribeDemoComponent,

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ClickComponent } from './click/click.component';
 
 @Component({
   selector: 'app-root',

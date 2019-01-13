@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Observable, timer, of, empty } from 'rxjs';
+import { Component } from '@angular/core';
+import { Observable, of, timer } from 'rxjs';
 
 @Component({
   selector: 'app-factory-demo',
