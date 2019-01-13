@@ -12,6 +12,8 @@ import { FactoryDemoComponent } from './factory-demo/factory-demo.component';
 import { SubscribeDemoComponent } from './subscribe-demo/subscribe-demo.component';
 import { SubscribeCompletedComponent } from './subscribe-completed/subscribe-completed.component';
 import { ErrorDemoComponent } from './error-demo/error-demo.component';
+import { MapFilterComponent } from './map-filter/map-filter.component';
+import { MapTypesComponent } from './map-types/map-types.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ErrorDemoComponent } from './error-demo/error-demo.component';
     FactoryDemoComponent,
     SubscribeDemoComponent,
     SubscribeCompletedComponent,
-    ErrorDemoComponent
+    ErrorDemoComponent,
+    MapFilterComponent,
+    MapTypesComponent
   ],
   imports: [
     BrowserModule,

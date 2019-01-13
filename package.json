@@ -1,6 +1,9 @@
 {
   "name": "understanding-rxjs",
   "version": "0.0.0",
+  "author": {
+    "name": "Marcel Lamothe"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",

@@ -40,7 +40,7 @@ export class MovieSearchComponent {
   private static readonly MinChars = 3;
 
   movieCtrl = new FormControl();
-  filteredMovies: Observable<object[]>;
+  filteredMovies: Observable<Movie[]>;
 
   constructor(private http: HttpClient) {
     this.filteredMovies = this.movieCtrl.valueChanges
@@ -50,7 +50,9 @@ export class MovieSearchComponent {
         // Add delay before executing the search
         debounceTime(MovieSearchComponent.DebounceTimeMS),
         // If enough characters have been specified, perform the search - oterwise return an empty array.
-        switchMap(search => this.isValidSearch(search) ? this.searchMovies(search) : of([])),
+        // Note 1) We can't use map here, because we're going from Observable<string> to Observable<Movie[]>
+        // Note 2) Of the choices, concatMap, mergeMap and switchMap, the last one is the right choice
+        switchMap(search => this.isValidSearch(search) ? this.searchMovies(search) : of<Movie[]>([])),
       );
   }
 

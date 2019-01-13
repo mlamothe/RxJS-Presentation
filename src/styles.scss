@@ -1,21 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+$dark-gray: rgb(48, 48, 48);
+
 p {
-    font-size: 36pt;
-    font-family: "Acme";
+  font-size: 36pt;
+  font-family: "Acme";
 }
 
 .result {
-    background-color: rgb(48,48,48);
-    border: 1px solid lightgrey;
-    color: white;
-    display: block;
+  background-color: $dark-gray;
+  border: 1px solid lightgrey;
+  color: white;
+  display: block;
+  font-weight: bold;
+  height: 34px;
+  line-height: 200%;
+  margin-top: 12px;
+  padding-right: 7px;
+  text-align: end;
+  width: 50px;
+}
+
+a,
+a:visited {
+  color: $dark-gray;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid $dark-gray;
+  padding: 16px;
+}
+
+td {
+  &.shaded {
+    background-color: lightgray;
     font-weight: bold;
-    height: 34px;
-    line-height: 200%;
-    margin-top: 12px;
-    padding-right: 7px;
-    text-align: end;
-    width: 50px;
+  }
 }
