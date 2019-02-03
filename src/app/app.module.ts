@@ -14,6 +14,8 @@ import { SubscribeCompletedComponent } from './subscribe-completed/subscribe-com
 import { ErrorDemoComponent } from './error-demo/error-demo.component';
 import { MapFilterComponent } from './map-filter/map-filter.component';
 import { MapTypesComponent } from './map-types/map-types.component';
+import { HistoryComponent } from './history/history.component';
+import { EndComponent } from './end/end.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { MapTypesComponent } from './map-types/map-types.component';
     SubscribeCompletedComponent,
     ErrorDemoComponent,
     MapFilterComponent,
-    MapTypesComponent
+    MapTypesComponent,
+    HistoryComponent,
+    EndComponent
   ],
   imports: [
     BrowserModule,
