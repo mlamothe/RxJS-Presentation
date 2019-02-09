@@ -16,6 +16,9 @@ import { MapFilterComponent } from './map-filter/map-filter.component';
 import { MapTypesComponent } from './map-types/map-types.component';
 import { HistoryComponent } from './history/history.component';
 import { EndComponent } from './end/end.component';
+import { ColdVsHotComponent } from './cold-vs-hot/cold-vs-hot.component';
+import { SubjectsComponent } from './subjects/subjects.component';
+import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { EndComponent } from './end/end.component';
     MapFilterComponent,
     MapTypesComponent,
     HistoryComponent,
-    EndComponent
+    EndComponent,
+    ColdVsHotComponent,
+    SubjectsComponent,
+    BehaviorSubjectComponent
   ],
   imports: [
     BrowserModule,
