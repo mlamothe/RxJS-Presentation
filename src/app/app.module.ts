@@ -19,6 +19,7 @@ import { EndComponent } from './end/end.component';
 import { ColdVsHotComponent } from './cold-vs-hot/cold-vs-hot.component';
 import { SubjectsComponent } from './subjects/subjects.component';
 import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.component';
+import { DecisionTreeComponent } from './decision-tree/decision-tree.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.co
     EndComponent,
     ColdVsHotComponent,
     SubjectsComponent,
-    BehaviorSubjectComponent
+    BehaviorSubjectComponent,
+    DecisionTreeComponent
   ],
   imports: [
     BrowserModule,
